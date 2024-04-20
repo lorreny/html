@@ -1,0 +1,51 @@
+body{
+    background-color: aqua;
+}
+body h2{
+    text-align: center;
+}
+.principal{
+    background-color: yellowgreen;
+    display: flex;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+p{
+    background-color: violet;
+    border-radius: 10px;
+    text-align: center;
+}
+.display-block{
+    background-color: turquoise;
+    display: block;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+.display-inline{
+    width: 50% !important;
+    background-color: turquoise  !important;
+    display: inline;
+    margin: 0px 10px;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+.display-inline p{
+    display: inline;
+    font-size: 18px !important;
+    padding: 20px;
+}
+.display-inline-block{
+    width: 30%;
+    background-color: turquoise;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+.display-inline-block p{
+    display: inline-block;
+    font-size: 18px !important;
+    padding: 20px;
+}
