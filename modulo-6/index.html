@@ -1,146 +1,134 @@
-body {
-    display: flex;
-    flex-flow: column;
-    background-color: orange;
-    margin-left: 0;
-    margin-right: 0;
-    text-align: center;
-    font-family: monospace;
-    font-weight: bold;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-.title {
-    text-align: center;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css.css">
+    <title>Box-game</title>
+</head>
 
-.box {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    background-color: blueviolet;
-    border-radius: 30px;;
-    font-size: larger;
-    font-weight: bolder;
-    margin: 20px;
-}
+<body>
+    <h1 class="title">Bem vindo ao jogo das caixas</h1>
+    <!-- Vamos utilizar a div abaixo para brincarmos com uma caixa através de suas propriedades de CSS -->
+    <p>Vamos usar essas caixas para brincar com CSS</p>
+    <div class="box"></div>
+    <!-- Atenção sempre crie novos containers para separar os exercícios Ex:-->
+    <div class="zero">
+        <p>Exemplo de exercício:</p>
+        <div class="box"></div>
+    </div>
+    <!-- Primeiro desafio: alinhe horizontalmente três caixas-->
+    <div class="ex1">
+        <div class="box"><p>Primeiro desafio</p></div>
+        
+        <div class="box"><p>Primeiro desafio</p></div>
+        <div class="box"><p>Primeiro desafio</p></div>
+    </div>
+    <!-- Segundo Desafio: Empilhe duas caixas -->
+    <div class="ex2">
+        <div class="box"><p>Segundo desafio</p></div>
+        <div class="box"><p>Segundo desafio</p></div>
+    </div>
+    <!-- Terceiro Desafio: Crie duas colunas de duas caixas -->
 
-.box p, .box6-2 p {
-    text-align: center;
-    font-size: large;
-    align-content: center;
-}
+    <div class="ex3">
+        <div class="box"><p>Terceiro desafio</p></div>
+        <div class="box"><p>Terceiro desafio</p></div>
+    
+        <div class="box"><p>Terceiro desafio</p></div>
+        <div class="box"><p>Terceiro desafio</p></div>
+    </div>
+    <!-- Quarto desafio: Centralize uma caixa-->
+    <div class="ex4">
+        <div class="box"><p>Quarto desafio</p></div>
+    </div>
+    <!-- Quinto desafio: Crie três colunas de caixas -->
+        <div class="ex5">
+            <div class="box"><p>Quinto desafio</p></div>
+            <div class="box"><p>Quinto desafio</p></div>
+            <div class="box"><p>Quinto desafio</p></div>
 
-.zero {
-    display: flex;
-    flex-flow: column;
-    height: 200px;
-    width: 50%;
-    background-color: darkred;
-    border-radius: 30px;
-    padding: 20px;
-}
+            <div class="box"><p>Quinto desafio</p></div>
+            <div class="box"><p>Quinto desafio</p></div>
+            <div class="box"><p>Quinto desafio</p></div>
+        </div>
+    <!-- Sexto desafio: Centralize uma caixa dentro de outra caixa -->
+    <div class="ex6Prin">
+        <div class="ex6">
+            <div class="box6">
+                <div class="box6-2"><p>Sexto desafio</p></div>
+            </div>
+        </div>
 
+    </div>
+</body>
 
-.zero p{
-    margin-right: 10px;
-}
+</html>
 
-.ex1 {
-    display: flex;
-    height: 200px;
-    width: 50%;
-    background-color: darkred;
-    border-radius: 30px;
-    padding: 20px;
-    margin: 10px;
-    align-items: center;
-    justify-content: center;
-}
-.ex2 {
-    display: inline-block;
-    height: 100%;
-    width: 50%;
-    background-color: darkred;
-    border-radius: 30px;
-    padding: 20px;
-    margin: 10px;
-    align-items: center;
-    justify-content: center;
-}
-.ex3Prin {
-    display: inline-flex;
-    /* background: coral; */
-}
-.ex3 {
-    display: ruby;
-    height: 100%;
-    width: 50%;
-    background-color: darkred;
-    border-radius: 30px;
-    padding: 20px;
-    margin: 10px;
-    align-items: center;
-    justify-content: center;
-}
-
-.ex4{
-    display: inline-grid;
-    height: 100%;
-    width: 50%;
-    background-color: darkred;
-    border-radius: 30px;
-    padding: 20px;
-    margin: 10px;
-    align-items: center;
-    justify-content: center;
-}
-
-.ex5 {
-    display: ruby;
-    height: 100%;
-    width: 50%;
-    background-color: darkred;
-    border-radius: 30px;
-    padding: 20px;
-    margin: 10px;
-    align-items: center;
-    justify-content: center;
-}
-.ex6Prin {
-    display: inline-flex;
-    /* background: coral; */
-}
-.ex6 {
-    display: flex;
-    height: 100%;
-    width: 50%;
-    background-color: darkred;
-    border-radius: 30px;
-    padding: 20px;
-    margin: 10px;
-    align-items: center;
-    justify-content: center;
-}
-
-.box6 {
-    display: flex;
-    width: 300px;
-    height: 300px;
-    background-color: blueviolet;
-    border-radius: 30px;;
-    font-size: larger;
-    font-weight: bolder;
-    margin: 20px;
-    align-items: center;
-    justify-content: center;
-}
-.box6-2{
-    display:grid;
-    width: 150px;
-    height: 150px;
-    background-color: rgb(226, 43, 202);
-    border-radius: 30px;;
-    font-size: larger;
-    font-weight: bolder;
-    margin: 20px;
-}
+<!--
+https://flexboxfroggy.com/#pt-br
+//nivel 1 
+justify-content: flex-end;
+//nivel 2 
+justify-content: center;
+//nivel 3
+justify-content: space-around
+//nivel 4
+justify-content: space-between;
+//nivel 5
+align-items: flex-end;
+//nivel 6
+justify-content: center;
+align-items: center;
+//nivel 7
+justify-content: space-around;
+align-items: flex-end;
+//nivel 8
+flex-direction: row-reverse;
+//nivel 9
+flex-direction: column;
+//nivel 10
+flex-direction: row-reverse;
+justify-content: flex-end;
+//nivel 11
+flex-direction: column;
+justify-content: flex-end;
+//nivel 12
+flex-direction: column-reverse;
+justify-content: space-between;
+//nivel 13
+flex-direction: row-reverse;
+justify-content: center;
+align-items: flex-end;
+//nivel 14
+order: 3;
+//nivel 15
+order: -1;
+//nivel 16
+align-self: flex-end;
+//nivel 17
+order: 2;
+align-self: flex-end;
+//nivel 18
+flex-wrap: wrap;
+//nivel 19
+flex-direction: column;
+flex-wrap: wrap;
+//nivel 20
+flex-direction: column;
+flex-wrap: wrap;
+//nivel 21
+align-content: flex-start;
+//nivel 22
+align-content: flex-end;
+//nivel 23
+flex-direction: column-reverse;
+align-content: center;
+//nivel 24
+flex-wrap: wrap-reverse;
+flex-direction: column-reverse;
+align-items: baseline;
+align-content: space-between;
+justify-content: center;
+-->
